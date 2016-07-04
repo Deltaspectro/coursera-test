@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-.row {
-	width: 100%;
-	padding: 20px;
-}
-
 h1 {
 	text-align: center;
 	padding: 15px 0;
@@ -35,11 +30,12 @@ p {
 	background-color: black;
 	color:white;
 }
- .chicken, .beef, .sushi {
-	background-color: gray;
- 	border: 1px solid black;
- 	margin: 5px;
- 	}
+
+.part {
+	margin: 10px;
+	float: left;
+	background-color:grey;
+}
 
 /*desktop*/
 @media (min-width: 992px) {
@@ -53,9 +49,7 @@ p {
 /*tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
 .chicken, .beef, .sushi {
-		float:left;
-		border: 1px solid black;
-		
+		float:left;	
 	}
 	.chicken, .beef {
 		width:50%;
@@ -68,7 +62,6 @@ p {
 @media (max-width: 767px) {
 .chicken, .beef, .sushi {
 		float: left;
-		border: 1px solid black;
 		width:100%;
 	}
 }
